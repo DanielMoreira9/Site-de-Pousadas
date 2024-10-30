@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pousada Nick's</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">
+            <img src="./img/Logo.png" height="60px" width="50px" alt="Logo">
+            <span>Nick's Pousadas</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" data-toggle="modal" data-target="#loginModal">Entrar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" data-toggle="modal" data-target="#signupModal">Criar Conta</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="formasdepagamento.html">Formas de Pagamento</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Nick's Pousada</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="email">E-mail</label>
+                            <input type="email" class="form-control" id="email" placeholder="Digite seu e-mail">
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Senha</label>
+                            <input type="password" class="form-control" id="password" placeholder="Digite sua senha">
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Entrar</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <p>Não tem uma conta? <a href="#" data-toggle="modal" data-target="#signupModal">Criar Conta</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="signupModalLabel">Criar Conta</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="signup-email">E-mail</label>
+                            <input type="email" class="form-control" id="signup-email"
+                            placeholder="Digite seu e-mail">
+                        </div>
+                        <div class="form-group">
+                            <label for="signup-password">Senha</label>
+                            <input type="password" class="form-control" id="signup-password" placeholder="Digite sua senha">
+                        </div>
+                        <div class="form-group">
+                            <label for="signup-confirm-password">Confirme sua Senha</label>
+                            <input type="password" class="form-control" id="signup-confirm-password" placeholder="Confirme sua senha">
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Criar Conta</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <p>Já tem uma conta? <a href="#" data-toggle="modal" data-target="#loginModal">Entrar</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+ 
+    <div class="banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 banner-section">
+                    <h2>Reserve sua estadia perfeita em até 12x sem juros!</h2>
+                </div>
+                <div class="col-md-3 banner-section">
+                    <h2>Ganhe recompensas com todas as suas diárias da sua estadia</h2>
+                </div>
+                <div class="col-md-3 banner-section">
+                    <h2>Economize mais com os preços para associados</h2>
+                </div>
+                <div class="col-md-3 banner-section">
+                    <h2>Oportunidades exclusivas para membros do clube</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="./img/Pousada Trancoso BA.jpg" class="card-img-top" >
+                    <div class="card-body">
+                        <h5 class="card-title">Pousada Trancoso, BA</h5>
+                        <p class="card-text">Uma charmosa pousada em Trancoso, com vista para o mar e ambiente acolhedor.</p>
+                        <a href="./alugar.html/trancoso.html" class="btn btn-primary">Ver Detalhes</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+
+                    <img src="./img/Pousada Rua das Pedras RJ.webp" class="card-img-top" >
+                    <div class="card-body">
+                        <h5 class="card-title">Pousada Rua das Pedras, RJ</h5>
+                        <p class="card-text">Localizada no coração de Búzios, perfeita para explorar a famosa Rua das Pedras.</p>
+                        <a href="./alugar.html/ruadaspedras.html" class="btn btn-primary">Ver Detalhes</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="./img/pousada Campos do Jordão.webp" class="card-img-top" >
+                    <div class="card-body">
+                        <h5 class="card-title">Pousada Campos do Jordão, SP</h5>
+                        <p class="card-text">Uma pousada aconchegante nas montanhas, ideal para um refúgio romântico.</p>
+                        <a href="./alugar.html/camposjordao.html" class="btn btn-primary">Ver Detalhes</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="./img/Pousada Praia Grande SP.webp" class="card-img-top" alt="Imagem da pousada">
+                    <div class="card-body">
+                        <h5 class="card-title">Pousada Praia Grande, SP</h5>
+                        <p class="card-text">A poucos passos da praia, perfeita para férias relaxantes em família.</p>
+                        <a href="./alugar.html/praiagrande.html" class="btn btn-primary">Ver Detalhes</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="associate-pricing">
+        <div class="container">
+            <h2>Preços para associados:</h2>
+            <p>Associados do Nick's Pousada™ Rewards economizam, em média, 10% em milhares de pousadas no mundo todo.</p>
+            <button class="btn" data-toggle="modal" data-target="#offersModal">Ver ofertas</button>
+        </div>
+    </div>
+      
+     <div class="modal fade" id="offersModal" tabindex="-1" aria-labelledby="offersModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="offersModalLabel">Ofertas para Associados</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>9% de desconto na Pousada Campos do Jordão</p>
+                    <p>11% de desconto na Pousada Rua das Pedras, RJ</p>
+                    <p>10% de desconto na Pousada Praia Grande, SP</h5>
+                    <p>10% de desconto na Pousada Trancoso, BA</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <footer class="footer text-center mt-5">
+        <div class="container">
+            <p>© 2024 Nick's Pousadas. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
